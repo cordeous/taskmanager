@@ -2,7 +2,7 @@
 
 # Database Final Project: Task Manager
 
-This project includes the HTML and PHP files with the code to the website found in the [csmath.uprm.edu](https://csmath.uprm.edu/comp4018.php) website.
+This project includes the PHP files with the code to the website found in the [csmath.uprm.edu](https://csmath.uprm.edu/comp4018.php) website.
 
 ## About
 
