@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body and Wrapper */
+body {
+    background-color: #f1f1f1;
+}
+
+.wrapper {
+    border: 2px solid black;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    color: #3B3B98;
+    margin: 0;
+}
+
+h2, h3 {
+    color: #333;
+    margin: 2% 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input[type="submit"],
+button {
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #333;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #6ab04c;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #26de81;
+}
+
+.btn-secondary {
+    background-color: #ff7979;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: #eb4d4b;
+}
+
+.btn-update {
+    background-color: #F79F1F;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-update:hover {
+    background-color: #FFC312;
+}
+
+.btn-delete {
+    background-color: #EA2027;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-delete:hover {
+    background-color: #ED4C67;
+}
+
+.btn-lg {
+    width: 50%;
+}
+
+/* Table Styles */
+.tbl-full {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table tr th, table tr td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.tbl-half {
+    width: 100%;
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
