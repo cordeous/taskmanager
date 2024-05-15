@@ -19,8 +19,11 @@
 
         <p>
         	<?php
+        		// Check if 'add_fail' session is set
         		if(isset($_SESSION['add_fail'])){
+        			// Display session message
         			echo $_SESSION['add_fail'];
+        			// Unset the session after displaying once
         			unset($_SESSION['add_fail']);
         		}
         	?>
@@ -45,26 +48,34 @@
                         <select name="list_id">
                             
                             <?php 
-                                
+                                // Connect to the database
                                 $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
                                 
+                                // Select the database
                                 $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error());
                                 
+                                // Query to select all lists
                                 $sql = "SELECT * FROM tbl_lists";
                                 
+                                // Execute the query
                                 $res = mysqli_query($conn, $sql);
                                 
+                                // Check if query executed successfully
                                 if($res==true)
                                 {
+                                    // Count the number of rows
                                     $count_rows = mysqli_num_rows($res);
                                     
+                                    // Check if lists are available
                                     if($count_rows>0)
                                     {
+                                        // Loop through all rows
                                         while($row=mysqli_fetch_assoc($res))
                                         {
                                             $list_id = $row['list_id'];
                                             $list_name = $row['list_name'];
                                             ?>
+                                            <!-- Print option for each list -->
                                             <option value="<?php echo $list_id ?>"><?php echo $list_name; ?></option>
                                             <?php
                                         }
@@ -72,7 +83,8 @@
                                     else
                                     {
                                         ?>
-                                        <option value="0">None</option>p
+                                        <!-- If no lists are available -->
+                                        <option value="0">None</option>
                                         <?php
                                     }
                                     
