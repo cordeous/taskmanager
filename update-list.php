@@ -69,13 +69,13 @@
             <table class="tbl-half">
                 <tr>
                     <td>List Name: </td>
-                    <td><input type="text" name="list_name" value="<?php echo $list_name; ?>" required="required" /></td>
+                    <td><input type="text" name="list_name" value="<?php echo $list_name; ?>" required="required" /></td> 
                 </tr>
                 
                 <tr>
-                    <td>List Description: </td>
+                    <td>List Description: </td> 
                     <td>
-                        <textarea name="list_description">
+                        <textarea name="list_description">   
                             <?php echo $list_description; ?>
                         </textarea>
                     </td>
